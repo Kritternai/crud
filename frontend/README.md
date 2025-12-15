@@ -74,7 +74,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 {/* <HashRouter> */}
    <BrowserRouter>
 
-2. src/providers/Online/Provider.js : put window.addEventListener into useEffect
+2. src/providers/Online/Online.js : put window.addEventListener into useEffect
 
   useEffect(() => {
     window.addEventListener('online', () => setOnline(true))

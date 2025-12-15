@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package dbaseproject;
+
+service DbaseProject {
+  
+  rpc createDocument(document) returns (document){}
+  rpc readDocument(document) returns (document){}
+  rpc updateDocument(document) returns (document){}
+  rpc deleteDocument(document) returns (document){}
+
+  rpc dropDatabase(baseReq) returns (respObj){}
+  rpc dropCollection(baseReq) returns (respObj){}
+
+  rpc dbIsReady(baseReq) returns (respObj){}
+
+}
+
+message baseReq {
+  string baseName = 1;
+  string collection = 3;
+}
+
+message document {
+  string base = 1;
+  string collection = 2;
+  string query = 3;
+  string data = 4;
+  string populate = 5;
+  string select = 6;
+  string options = 7;
+}
+
+message respObj {
+  bool status = 1;
+}
