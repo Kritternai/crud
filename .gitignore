@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Production builds
+/frontend/build/
+/backend/build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+.cache/
+temp/
+
+# Node version manager
+.nvmrc
+.node-version
+
+# IDE settings
+.prettierrc
+.eslintrc.json
